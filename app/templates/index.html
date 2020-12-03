@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block banana %}  
+
+<h1>Upcoming Events!</h1>
+
+<form action="/add-event" method="post"> 
+    <label for="name">Name</label>
+    <input type="text" name="Name" id="name">
+
+    <label for="date">Date</label>
+    <input type="date" name="event-date" value="dd/mm/yyyy" id="date">
+
+    <label for="number-of-guests">Number of Guests</label>
+    <input type="text" name="number-of-guests" id="number-of-guests">
+
+    <label for="recurring">Recurring?</label>
+    <input type="checkbox" name="recurring" id="recurring">
+
+    <label for="room-location">Room Location</label>
+    <input type="text" name="room-location" id="room-location">
+
+    <label for="description">Description</label>
+    <textarea name="description" rows="2" cols="30"></textarea>
+
+    <input type="submit" value="Add Event">
+
+</form>
